@@ -1,0 +1,349 @@
+:root {
+  --headline_color_yellow: rgb(255, 213, 0);
+  --headline_color_blue: rgb(0, 0, 195, 0.7);
+}
+
+@font-face {
+  font-family: "PokemonFont";
+  src: url("../Fonts/Pokemon\ Solid.ttf") format("truetype");
+}
+
+body {
+  background-image: url("../Assets/Background/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#search_input {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "PokemonFont";
+  margin-bottom: 30px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+footer a {
+  gap: 40px;
+  color: rgb(238, 255, 0);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.headline_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "PokemonFont";
+  margin-bottom: 2rem;
+  height: auto;
+}
+
+.headline {
+  position: static;
+  margin: 0 0 1rem 0;
+  text-shadow: 10px 10px 10px var(--headline_color_blue) !important ; /*;)*/
+}
+
+.yellow {
+  color: var(--headline_color_yellow);
+  font-size: 5rem;
+}
+
+.schoolmonbox a {
+  color: black;
+  text-decoration: none;
+}
+
+.schoolmonbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-left: 30px;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+  transition: transform 0.2s ease;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  border: 2px solid rgba(200, 220, 255, 0.8);
+  border-radius: 10%;
+  transform: translateY(30px);
+}
+
+.box:hover {
+  transform: translateY(-10px) scale(1.00);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.4);
+}
+
+.boximage {
+  width: 600px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.boxname {
+  margin-top: -10px;
+  padding-left: 50px;
+  font-size: 2rem;
+  font-family: "Arial Black", Arial, sans-serif;
+  align-items: right;
+}
+
+.boxnumber {
+  margin-top: 10px;
+  padding-left: 50px;
+  font-size: 1.2rem;
+  font-family: "Arial Black", Arial, sans-serif;
+  align-items: right;
+  color: rgb(182, 182, 182);
+}
+
+.boxabilities {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* Umschalten zwischen Kartenarten */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 2rem;
+}
+
+.navigation button {
+  font-size: 2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 213, 0);
+  font-family: "PokemonFont";
+}
+
+#sectionTitle {
+  font-family: "PokemonFont";
+  font-size: 2.5rem;
+  color: var(--headline_color_yellow);
+  text-shadow: 5px 5px 5px var(--headline_color_blue);
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Typen */
+.natur {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(0, 120, 0);
+  background-color: rgb(0, 120, 0);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(0, 120, 0, 0.7);
+}
+
+.fight {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(182, 118, 0);
+  background-color: rgb(182, 118, 0);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(182, 118, 0, 0.7);
+}
+
+.fire {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(255, 47, 0);
+  background-color: rgb(255, 47, 0);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 50, 0, 0.7);
+}
+
+.psycho {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(157, 0, 255);
+  background-color: rgb(157, 0, 255);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(157, 0, 255, 0.7);
+}
+
+.fairy {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(255, 0, 255);
+  background-color: rgb(255, 0, 255);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(255, 0, 255, 0.7);
+}
+
+.water {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(0, 106, 255);
+  background-color: rgb(0, 106, 255);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 120, 255, 0.7);
+}
+
+.kristall {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid conic-gradient(from 45deg, red, yellow, green, cyan, blue, purple, red);
+  background: conic-gradient(
+    from 45deg,
+    red,
+    yellow,
+    green,
+    cyan,
+    blue,
+    purple,
+    red
+  );
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(conic-gradient(from 45deg, red, yellow, green, cyan, blue, purple, red), 0.7);
+}
+
+.unlicht {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(38, 23, 58);
+  background-color: rgb(38, 23, 58);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(38, 23, 58, 0.7);
+}
+
+.steel {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(86, 88, 89);
+  background-color: rgb(86, 88, 89);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(86, 88, 89, 0.7);
+}
+
+.electro {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(222, 222, 0);
+  background-color: rgb(222, 222, 0);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(222, 222, 0, 0.7);
+}
+
+.ice {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(153, 236, 255);
+  background-color: rgb(153, 236, 255);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(153, 236, 255, 0.7);
+}
+
+.dragon {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(144, 106, 63);
+  background-color: rgb(144, 106, 63);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(144, 106, 63, 0.7);
+}
+
+.normal {
+  margin-top: -15px;
+  margin-left: 30px;
+  border: 5px solid rgb(160, 160, 160);
+  background-color: rgb(160, 160, 160);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(160, 160, 160, 0.7);
+}

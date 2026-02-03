@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>schoolmonsdex</title>
+		<link rel="stylesheet" href="CSS_Dateien/schoolmons.css">
+		<script src="Java_Script_Dateien/split_types.js" defer></script>
+	</head>
+
+	<body>
+		<div class="headline_top">
+			<h1 class="headline yellow" style="text-shadow: 50px 10px 10px var(--headline_color_blue);">Schoolmónsdex</h1> <!-- ;) -->
+		</div>
+
+		<div class="navigation">
+			<button onclick="prevSection()">⬅</button>
+			<span id="sectionTitle">Schoolmons</span>
+			<button onclick="nextSection()">➡</button>
+		</div>
+		
+		<!-- Schoolmóns suchen -->
+		<input type="text" id="search_input" placeholder="Pokémon suchen...">
+
+		<div id="schoolmonsFilters">
+			<div class="navigation">
+				<button data-type="all">Alle</button>
+				<button data-type="fire">Feuer</button>
+				<button data-type="water">Wasser</button>
+				<button data-type="electro">Elektro</button>
+				<button data-type="natur">Natur</button>
+				<button data-type="unlicht">Unlicht</button>
+				<button data-type="psycho">Psycho</button>
+				<button data-type="steel">Stahl</button>
+				<button data-type="fight">Kampf</button>
+				<button data-type="fairy">Fee</button>
+				<button data-type="dragon">Drache</button>
+				<button data-type="ice">Eis</button>
+			</div>
+		</div>
+		
+		<div class="sections">
+		<!-- Schoolmons -->
+  		<div class="section active" id="schoolmons">
+			<div class="schoolmonbox">
+
+				<!-- Lehrer -->
+				<!-- Kaliwoda Thomas -->
+				<a href="Unterseiten/Schoolmons/Kaliwoda/Kaliwoda.html" class="box" data-name="Prof. Kaliwoda" data-type="natur">
+					<img class="boximage" src="Assets/Images/Schoolmons/Kaliwoda.png" alt="Kaliwoda Thomas">
+					<p class="boxnumber">NR. 01</p>
+					<p class="boxname">Prof. Kaliwoda</p>
+					<div class="boxabilities">
+						<p class="natur">Natur</p>
+					</div>
+				</a>
+
+				<!-- Stobl Markus -->
+				<a href="Unterseiten/Schoolmons/Strobl/Strobl.html" class="box" data-name="Prof. Strobl" data-type="steel">
+					<img class="boximage" src="Assets/Images/Schoolmons/Strobl.png" alt="Stobl Markus">
+					<p class="boxnumber">NR. 02</p>
+					<p class="boxname">Prof. Strobl</p>
+					<div class="boxabilities">
+						<p class="steel">Stahl</p>
+					</div>
+				</a>
+
+				<!-- Prof. Kilzer -->
+				<a href="Unterseiten/Schoolmons/Kilzer/Kilzer.html" class="box" data-name="Prof. Kilzer" data-type="fairy">
+					<img class="boximage" src="Assets/Images/Schoolmons/Kilzer.png" alt="Prof. Kilzer">
+					<p class="boxnumber">NR. 03</p>
+					<p class="boxname">Prof. Kilzer</p>
+					<div class="boxabilities">
+						<p class="fairy">Fee</p>
+					</div>
+				</a>
+
+				<!-- Prof. Gstir -->
+				<a href="Unterseiten/Schoolmons/Gstir/Gstir.html" class="box" data-name="Prof. Gstir" data-type="electro">
+					<img class="boximage" src="Assets/Images/Schoolmons/Gstir.png" alt="Prof. Gstir">
+					<p class="boxnumber">NR. 04</p>
+					<p class="boxname">Prof. Gstir</p>
+					<div class="boxabilities">
+						<p class="electro">Elektro</p>
+					</div>
+				</a>
+
+				<!-- Prof. Ebster -->
+				<a href="Unterseiten/Schoolmons/Ebster/Ebster.html" class="box" data-name="Prof. Ebster" data-type="unlicht">
+					<img class="boximage" src="Assets/Images/Schoolmons/Ebster.png" alt="Prof. Ebster">
+					<p class="boxnumber">NR. 05</p>
+					<p class="boxname">Prof. Ebster</p>
+					<div class="boxabilities">
+						<p class="unlicht">Unlicht</p>
+					</div>
+				</a>
+
+				<!-- Prof. Bader -->
+				<a href="Unterseiten/Schoolmons/Bader/Bader.html" class="box" data-name="Prof. Bader" data-type="fire">
+					<img class="boximage" src="Assets/Images/Schoolmons/Bader.png" alt="Prof. Bader">
+					<p class="boxnumber">NR. 06</p>
+					<p class="boxname">Prof. Bader</p>
+					<div class="boxabilities">
+						<p class="fire">Feuer</p>
+					</div>
+				</a>
+
+				<!-- Prof. Tappeiner -->
+				<a href="Unterseiten/Schoolmons/Tappeiner/Tappeiner.html" class="box" data-name="Prof. Tappeiner" data-type="electro">
+					<img class="boximage" src="Assets/Images/Schoolmons/Tappeiner.png" alt="Prof. Tappeiner">
+					<p class="boxnumber">NR. 06</p>
+					<p class="boxname">Prof. Tappeiner</p>
+					<div class="boxabilities">
+						<p class="electro">Elektro</p>
+					</div>
+				</a>
+
+				<!-- Tappeihnachtsmann -->
+				<a href="Unterseiten/Schoolmons/Tappeihnachtsmann/Tappeihnachtsmann.html" class="box" data-name="Tappeihnachtsmann" data-type="ice">
+					<img class="boximage" src="Assets/Images/Schoolmons/Tappeihnachtsmann.png" alt="Tappeihnachtsmann">
+					<p class="boxnumber">NR. 06/2</p>
+					<p class="boxname">Tappeihnachtsmann</p>
+					<div class="boxabilities">
+						<p class="ice">Eis</p>
+					</div>
+				</a>
+
+				<!-- Prof. Steiner -->
+				<a href="Unterseiten/Schoolmons/Steiner/Steiner.html" class="box" data-name="Prof. Steiner" data-type="psycho">
+					<img class="boximage" src="Assets/Images/Schoolmons/Steiner.png" alt="Prof. Steiner">
+					<p class="boxnumber">NR. 07</p>
+					<p class="boxname">Prof. Steiner</p>
+					<div class="boxabilities">
+						<p class="psycho">Psycho</p>
+					</div>
+				</a>
+
+				<!-- Prof. Giner -->
+				<a href="Unterseiten/Schoolmons/Giner/Giner.html" class="box" data-name="Prof. Giner" data-type="unlicht">
+					<img class="boximage" src="Assets/Images/Schoolmons/Giner.png" alt="Prof. Giner">
+					<p class="boxnumber">NR. 08</p>
+					<p class="boxname">Prof. Giner</p>
+					<div class="boxabilities">
+						<p class="unlicht">Unlicht</p>
+					</div>
+				</a>
+
+				<!-- Prof. Neuner -->
+				<a href="Unterseiten/Schoolmons/Neuner/Neuner.html" class="box" data-name="Prof. Neuner" data-type="water">
+					<img class="boximage" src="Assets/Images/Schoolmons/Neuner.png" alt="Prof. Neuner">
+					<p class="boxnumber">NR. 09</p>
+					<p class="boxname">Prof. Neuner</p>
+					<div class="boxabilities">
+						<p class="water">Wasser</p>
+					</div>
+				</a>
+				
+				<!-- Schüler -->
+				<!-- Michael -->
+				<a href="Unterseiten/Schoolmons/Michael/Michael.html" class="box" data-name="Michael" data-type="natur">
+					<img class="boximage" src="Assets/Images/Schoolmons/Michael.png" alt="Michael">
+					<p class="boxnumber">NR. 10</p>
+					<p class="boxname">Michael</p>
+					<div class="boxabilities">
+						<p class="natur">Natur</p>
+					</div>
+				</a>
+
+				<!-- Paul -->
+				<a href="Unterseiten/Schoolmons/Paul/Paul.html" class="box" data-name="Paul" data-type="fire">
+					<img class="boximage" src="Assets/Images/Schoolmons/Paul.png" alt="Paul">
+					<p class="boxnumber">NR. 11</p>
+					<p class="boxname">Paul</p>
+					<div class="boxabilities">
+						<p class="fire">Feuer</p>
+					</div>
+				</a>
+
+				<!-- Raphael -->
+				<a href="Unterseiten/Schoolmons/Raphael/Raphael.html" class="box" data-name="Raphael" data-type="psycho">
+					<img class="boximage" src="Assets/Images/Schoolmons/Raphael.png" alt="Raphael">
+					<p class="boxnumber">NR. 12</p>
+					<p class="boxname">Raphael</p>
+					<div class="boxabilities">
+						<p class="psycho">Psycho</p>
+					</div>
+				</a>
+
+				<!-- Evelyn -->
+				<a href="Unterseiten/Schoolmons/Evelyn/Evelyn.html" class="box" data-name="Evelyn" data-type="unlicht">
+					<img class="boximage" src="Assets/Images/Schoolmons/Evelyn.png" alt="Evelyn">
+					<p class="boxnumber">NR. 13</p>
+					<p class="boxname">Evelyn</p>
+					<div class="boxabilities">
+						<p class="unlicht ">Unlicht</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!-- Orte -->
+		<div class="section" id="orte">
+			<div class="schoolmonbox">
+
+				<a href="Unterseiten/Orte/Das finstere Loch/Das finstere Loch.html" class="box">
+					<img class="boximage" src="Assets/Images/Orte/Das finstere Loch.png" alt="Das finstere Loch">
+					<p class="boxnumber">NR. 01</p>
+					<p class="boxname">Das finstere Loch</p>
+				</a>
+			</div>
+		</div>
+
+		<!-- Items -->
+		<div class="section" id="items">
+			<div class="schoolmonbox">
+
+				<a href="Unterseiten/Items/Pfandflasche/Pfandflasche.html" class="box">
+					<img class="boximage" src="Assets/Images/Trainer/Items/Pfandflasche.png">
+					<p class="boxnumber">NR. 01</p>
+					<p class="boxname">Pfandflasche</p>
+				</a>
+
+			</div>
+		</div>
+		
+		</div>
+
+		<script src="Java_Script_Dateien/search_function.js" defer></script>
+	</body>
+	<footer>
+		<a href="Impressum.html">Impressum</a>
+	</footer>		
+</html>

@@ -1,0 +1,66 @@
+:root {
+  --headline_color_yellow: rgb(255, 213, 0);
+  --headline_color_blue: rgb(0, 0, 195, 0.7);
+}
+
+@font-face {
+  font-family: "PokemonFont";
+  src: url("../Fonts/Pokemon\ Solid.ttf") format("truetype");
+}
+
+body {
+  background-image: url("../Assets/Background/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+footer {
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+footer a {
+  gap: 40px;
+  color: rgb(238, 255, 0);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.headline_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "PokemonFont";
+  margin-bottom: 2rem;
+  height: auto;
+}
+
+.headline {
+  position: static;
+  margin: 0 0 1rem 0;
+  text-shadow: 10px 10px 10px var(--headline_color_blue);
+}
+
+.yellow {
+  color: var(--headline_color_yellow);
+  font-size: 5rem;
+}
+
+.schoolmon_box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f3f3f3;
+  border-radius: 5%;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+body ul {
+  margin-top: -20px;
+  margin-bottom: -40px;
+}
