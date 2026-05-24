@@ -1,0 +1,34 @@
+David:
+------
+Geschlecht: männlich
+Größe: 1,90 m
+Gewicht: 94 kg
+Typ: Kamp
+Story: ...
+
+
+Raphi:
+------
+Geschlecht: divers (Computer)
+Größe: 1,72 m
+Gewicht: 60 kg
+Typ: Psycho
+Story: Schaut gerne Tutorials, schläft wenig, ...
+
+
+Elias:
+------
+Geschlecht: männlich
+Größe: 
+Gewicht:
+Typ: 
+Story: ...
+
+
+Paul:
+-----
+Geschlecht: männlich
+Größe: 
+Gewicht:
+Typ: 
+Story: ...
